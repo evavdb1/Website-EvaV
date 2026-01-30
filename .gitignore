@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.log
+*.tmp
+*.bak
+*~
+.env

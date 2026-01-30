@@ -1,9 +1,41 @@
+/*------------------------- base all pages -------------------------*/
+
+* { box-sizing: border-box; }
+
 body {
     background-color: #c5f5b9;
-    margin: none;
+    margin: 0;
     color: #2c3629;
     font-family: "Merriweather", Georgia, serif;
+    line-height: 1.6;
 }
+
+/*------------------------- typography headings and text -------------------------*/
+
+h1, h2, h3, h4 {
+    margin: 0.5em 0;
+    color: #2c3629;
+}
+
+p { max-width: 70ch; }
+
+/*------------------------- layout header, main, footer -------------------------*/
+
+header {
+    padding: 20px;
+    border-bottom: 1px solid #8fbf8a;
+}
+
+main { padding: 20px; }
+
+footer {
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #8fbf8a;
+    font-size: 0.9rem;
+}
+
+/*------------------------- logo & images -------------------------*/
 
 .logo {
     max-width: 300px;
@@ -11,37 +43,182 @@ body {
     display: block;
 }
 
-/* navigation bar */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
+img::after {
+    content: "EvaV";
+    position: absolute;
+}
 
-nav {
-    margin-bottom: 20px;
+/*------------------------- navigation bar -------------------------*/
+
+nav { margin-bottom: 15px; }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 nav a {
-    color: #c5f5b9;
-    margin-right: 15px;
+    color: #2c3629;
     font-weight: bold;
     text-decoration: none; 
 }
 
-nav a.current { color: #e62639; }
+nav a.current {  
+    color: #3a7f3a;
+    text-decoration: underline; 
+}
+
 nav a:hover { text-decoration: underline; }
 
 nav a:focus { 
-    outline: 2px dashed #e62639;
+    outline: 2px dashed #3a7f3a;
     outline-offset: 4px;
 }
 
-nav::before {    
-    content: "";
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: url("../images/icon") no-repeat center / contain; 
-    margin-right: 10px;
-    vertical-align: middle;
+/*------------------------- buttons, lists, interactive elements -------------------------*/
+
+button {
+    font-family: inherit;
+    padding: 6px 12px;
+    border: 1px solid #8fbf8a;
+    background-color: #e6f4e2;
+    cursor: pointer;
 }
 
+button:hover {
+    background-color: #d3ebcd;
+}
 
+ul {
+    padding-left: 20px;
+}
 
+/*------------------------- home page -------------------------*/
+
+#home img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+/*------------------------- about page -------------------------*/
+
+#about ul {
+    list-style: square;
+}
+
+/*------------------------- contact page -------------------------*/
+
+#contact ul li {
+    margin-bottom: 8px;
+}
+
+/*------------------------- cv page -------------------------*/
+
+#cv button {
+    margin-top: 8px;
+}
+
+#cv div {
+    margin-top: 8px;
+    padding-left: 10px;
+    border-left: 2px solid #8fbf8a;
+}
+
+/*------------------------- projects page -------------------------*/
+
+#project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project {
+    position: relative;
+    border: 1px solid #8fbf8a;
+    overflow: hidden;
+    aspect-ratio: 1 / 1; /* forces square tiles */
+}
+
+.project a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* image layer */
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+/* title layer */
+.project-title {
+    position: absolute;
+    inset: 0;
+    background-color: #2c3629; 
+    color: #c5f5b9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+/* hover/focus behavior */
+.project:hover img,
+.project a:focus img {
+    opacity: 0;
+}
+
+.project:hover .project-title,
+.project a:focus .project-title {
+    opacity: 1;
+}
+
+/*------------------------- interlude page -------------------------*/
+
+body:has(#memes) {
+    background-color: #e6e1f0;
+    color: #2f2f3a;
+}
+
+#memes img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#memes img:hover {
+    transform: scale(1.03);
+}
+
+/*------------------------- accessibility & untilities -------------------------*/
+
+a:focus-visible {
+    outline: 2px dashed currentColor;
+    outline-offset: 4px;
+}
+
+/* reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
