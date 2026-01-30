@@ -145,7 +145,7 @@ ul {
     position: relative;
     border: 1px solid #8fbf8a;
     overflow: hidden;
-    aspect-ratio: 1 / 1; /* forces square tiles */
+    aspect-ratio: 1 / 1; 
 }
 
 .project a {
@@ -193,6 +193,11 @@ ul {
 }
 
 /*------------------------- interlude page -------------------------*/
+
+#interlude img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
 
 body:has(#memes) {
     background-color: #e6e1f0;
