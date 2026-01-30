@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -28,7 +28,7 @@
 
     <main>
         <section id="cv">
-            <img src="assets/pdfs/CV (eng).pdf" alt="cv eva" title="cv eva">
+            <img src="assets/images/docs/CV (eng).pdf" alt="cv eva" title="cv eva">
 
             <h3>Experience</h3>
             <ul>
@@ -98,8 +98,9 @@
                     Enterprise Java Developer — INTEC Brussel, 2025
                     <button onclick="toggleDetails('cert1')">Show Certificate</button>
                     <div id="cert1" style="display:none;">
-                        <p><a href="assets/pdfs/" target="_blank">Open Certificate PDF</a></p>
-
+                        <p><a href="assets/images/docs/" target="_blank">Open Certificate PDF</a></p>
+                        <p>Reference: Hilal Demir, Java/Python instructeur, Intec Brussel
+                            Hilal.Demir@intecbrussel.be</p>
                     </div>
                 </li>
 
@@ -107,7 +108,7 @@
                     Associate Degree Accounting — PCVO Het Perspectief, Ghent, 2014
                     <button onclick="toggleDetails('diploma1')">Show Diploma</button>
                     <div id="diploma1" style="display:none;">
-                        <p><a href="assets/pdfs/degree accountant.pdf" target="_blank">Show diploma</a></p>
+                        <p><a href="assets/images/docs/degree accountant.pdf" target="_blank">Show diploma</a></p>
                     </div>
                 </li>
 
@@ -143,16 +144,10 @@
     </main>
 
     <footer>
-        <img src="images/icons/logo.png" class="logo">
+        <img src="assets/images/icons/logo.png" class="logo">
         <p>&copy; 2026 Portfolio Eva Vandenbroucke.</p>
     </footer>
 
-    <script>
-        function toggleDetails(id) {
-            const el = document.getElementById(id);
-            el.style.display = el.style.display === 'none' ? 'block' : 'none';
-        }    
-    </script>
     <script src="javascript/script_portfolio.js"></script>
 </body>
 </html>
