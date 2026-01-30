@@ -1,0 +1,47 @@
+body {
+    background-color: #c5f5b9;
+    margin: none;
+    color: #2c3629;
+    font-family: "Merriweather", Georgia, serif;
+}
+
+.logo {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* navigation bar */
+
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #c5f5b9;
+    margin-right: 15px;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+nav a.current { color: #e62639; }
+nav a:hover { text-decoration: underline; }
+
+nav a:focus { 
+    outline: 2px dashed #e62639;
+    outline-offset: 4px;
+}
+
+nav::before {    
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../images/icon") no-repeat center / contain; 
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+

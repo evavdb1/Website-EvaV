@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eva Vandenbroucke">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style_portfolio.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Eva Vandenbroucke</h1>
+        <h2>Curriculum Vitae</h2>
+        <nav>
+            <ul>
+                <li><a href="1index.html">Home</a></li>
+                <li><a href="2about.html">About</a></li>
+                <li><a href="3contact.html">Contact</a></li>
+                <li><a href="4cv.html" class="current">CV</a></li>
+                <li><a href="5projects.html">Projects</a></li>
+                <li><a href="6interlude.html" tag="And... something completely different">Break</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cv">
+            <img src="assets/pdfs/CV (eng).pdf" alt="cv eva" title="cv eva">
+
+            <h3>Experience</h3>
+            <ul>
+                <li>
+                    <button onclick="toggleDetails('job1')">Operator Final Assembly</button>
+                    <div id="job1" style="display:none;">
+                        <p>Volvo Trucks, Ghent — 05/2023 - 01/2025</p>
+                        <p>Built trucks as part of the final assembly team.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <button onclick="toggleDetails('job2')">Part of the Crew</button>
+                    <div id="job2" style="display:none;">
+                        <p>Cafe Shapira — 01/2018 - 12/2022</p>
+                        <p>Progressed from general staff member and cook to managing daily operations and closing.
+                            A charming neighborhood coffeehouse in a challenging setting.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <button onclick="toggleDetails('job3')">Assistant / Sous-Chef</button>
+                    <div id="job3" style="display:none;">
+                        <p>Sint-Coleta, Ghent — 06/2015 - 08/2017 & 01/2023 - 02/2023</p>
+                        <p>Handled kitchen logistics and provided meals for 100 residents in a residential care center.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <button onclick="toggleDetails('job4')">Data Processing (Project Assignment)</button>
+                    <div id="job4" style="display:none;">
+                        <p>Centexbel, Ghent — 01/2014 - 12/2014</p>
+                        <p>Processed data for project-specific assignment.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <button onclick="toggleDetails('job5')">Case Management / PA</button>
+                    <div id="job5" style="display:none;">
+                        <p>Dekra Experts, Ghent — 04/2011 - 12/2012</p>
+                        <p>Provided case management support and assisted insurance experts as personal assistant.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <button onclick="toggleDetails('job6')">Hotel Administrator / Reception</button>
+                    <div id="job6" style="display:none;">
+                        <p>Hotel Gravensteen, Ghent — 08/2008 - 03/2011</p>
+                        <p>Daily hotel operations & administration and reception duties.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <button onclick="toggleDetails('job7')">Payroll Administration / HR</button>
+                    <div id="job7" style="display:none;">
+                        <p>AGO Interim, Kortrijk — 1999 - 2006</p>
+                        <p>Handled payroll administration and human resources across various contracts from student job
+                            to full-time employment.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <h3>Education</h3>
+            <ul>
+                <li>
+                    Enterprise Java Developer — INTEC Brussel, 2025
+                    <button onclick="toggleDetails('cert1')">Show Certificate</button>
+                    <div id="cert1" style="display:none;">
+                        <p><a href="assets/pdfs/" target="_blank">Open Certificate PDF</a></p>
+
+                    </div>
+                </li>
+
+                <li>
+                    Associate Degree Accounting — PCVO Het Perspectief, Ghent, 2014
+                    <button onclick="toggleDetails('diploma1')">Show Diploma</button>
+                    <div id="diploma1" style="display:none;">
+                        <p><a href="assets/pdfs/degree accountant.pdf" target="_blank">Show diploma</a></p>
+                    </div>
+                </li>
+
+                <li>UGENT, Ghent — Political & Social Sciences, 2 years, 2006</li>
+                <li>Milwaukee WI, USA — Foreign Exchange Student, 2002</li>
+                <li>Sint-Franciscusinstituut, Poperinge — Secondary/High School ASO (Latin - Languages), 2001</li>
+                <li>Various targeted courses — Administrative & industry-specific software, food safety &
+                    allergens, fire prevention & extinguishing, improvisation, comedy, public speaking</li>
+            </ul>
+
+            <h3>Skills</h3>
+            <ul>
+                <li>Java development (Spring Boot, Spring MVC, Hibernate, JPA, JDBC, Maven)</li>
+                <li>Frontend development: HTML, CSS, JavaScript, TypeScript, Angular, Bootstrap</li>
+                <li>Databases & persistence: MySQL, data modeling</li>
+                <li>Version control & tooling: Git, GitHub, IntelliJ IDEA</li>
+                <li>Testing, methodologies & modeling: JUnit, Agile/Scrum, UML, BPMN</li>
+                <li>General IT & analytics: Microsoft Office, Google Workspace, software intuition, security & privacy
+                    awareness</li>
+            </ul>
+
+            <h3>Languages</h3>
+            <ul>
+                <li>Dutch (native)</li>
+                <li>English (C2 bilingual)</li>
+                <li>French (B2 very good)</li>
+                <li>Hebrew (B1 good)</li>
+                <li>German (A2 conversation)</li>                
+                <li>Spanish (tourist)</li>
+            </ul>
+
+        </section>
+    </main>
+
+    <footer>
+        <img src="images/icons/logo.png" class="logo">
+        <p>&copy; 2026 Portfolio Eva Vandenbroucke.</p>
+    </footer>
+
+    <script>
+        function toggleDetails(id) {
+            const el = document.getElementById(id);
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        }    
+    </script>
+    <script src="javascript/script_portfolio.js"></script>
+</body>
+</html>
