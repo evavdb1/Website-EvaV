@@ -51,9 +51,7 @@ portfolio_resume/
 ├── interlude.html      
 │
 ├── css/
-│   ├── main.css       
-│   ├── cv.css          
-│   └── photos.css      g
+│   └── style_portfolio.css       
 │
 ├── javascript/
 │   ├── main.js          
