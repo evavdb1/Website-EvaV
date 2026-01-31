@@ -51,8 +51,8 @@ portfolio_resume/
 │
 ├── css/
 │   ├── main.css       
-│   ├── cv.css          # optional: CV-specific styles
-│   └── photos.css      # optional: gallery styling
+│   ├── cv.css          
+│   └── photos.css      g
 │
 ├── javascript/
 │   ├── main.js          
@@ -61,12 +61,11 @@ portfolio_resume/
 │   └── projects.js     
 │
 ├── assets/
-│   ├── images/ (content, no css, unique, .jpg, .png)
-│   │   ├── pictures/
-│   │   ├── docs/
-│   │   └── memes/
-│   └── icons/ 
-│	 	  └── logo.svq	
+│   ├── docs/
+│   └── images/
+│       ├── pictures/
+│       ├── icons/
+│       └── memes/
 │
 ├── projects/
 │		└── project15/
