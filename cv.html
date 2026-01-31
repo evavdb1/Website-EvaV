@@ -28,26 +28,32 @@
 
     <main>
         <section id="cv">
-            <img src="assets/docs/CV-c (eng).png" alt="cv eva" title="cv eva">
+            <div class="cv-preview">
+                <a href="assets/docs/CV-c (eng).png" target="_blank" title="Open full CV">
+                    <img src="assets/docs/CV-c (eng).png" alt="cv eva" title="cv eva">
+                </a>
+            </div>
 
-            <p id="statement">Company and institution names are intentionally anonymized for privacy. Full details are available upon request.</p>
-            
-            <p class="cv-note">An uncensored CV with full employer and institution names is available upon request.</p>
+            <div class="cv-info">
+                <p>Company and institution names are intentionally anonymized for privacy. Full details are available
+                    upon request.</p>
+            </div>
 
             <h3>Experience</h3>
-            <ul>
+            <ul class="experience">
                 <li>
                     <button onclick="toggleDetails('job1')">Operator Final Assembly</button>
-                    <div id="job1" style="display:none;">
-                        <p><span class="anonymized" title="Name withheld for privacy">Large industrial manufacturing company (Ghent)</span> — 05/2023 - 01/2025</p>
+                    <div id="job1" class="experience-content" style="display:none;">
+                        <p><span class="anonymized" title="Name withheld for privacy">Large industrial manufacturing
+                                company (Ghent)</span> * <span class="dates">05/2023 - 01/2025</span></p>
                         <p>Built trucks as part of the final assembly team.</p>
                     </div>
                 </li>
 
                 <li>
                     <button onclick="toggleDetails('job2')">Part of the Crew</button>
-                    <div id="job2" style="display:none;">
-                        <p>Cafe Shapira — 01/2018 - 12/2022</p>
+                    <div id="job2" class="experience-content" style="display:none;">
+                        <p>Cafe Shapira * <span class="dates">01/2018 - 12/2022</span></p>
                         <p>Progressed from general staff member and cook to managing daily operations and closing.
                             A charming neighborhood coffeehouse in a challenging setting.</p>
                     </div>
@@ -55,40 +61,45 @@
 
                 <li>
                     <button onclick="toggleDetails('job3')">Assistant / Sous-Chef</button>
-                    <div id="job3" style="display:none;">
-                        <p><span class="anonymized" title="Name withheld for privacy">Residential care center (Ghent)</span> — 06/2015 - 08/2017 & 01/2023 - 02/2023</p>
+                    <div id="job3" class="experience-content" style="display:none;">
+                        <p><span class="anonymized" title="Name withheld for privacy">Residential care center
+                                (Ghent)</span> * <span class="dates">06/2015 - 08/2017 & 01/2023 - 02/2023</span></p>
                         <p>Handled kitchen logistics and provided meals for 100 residents.</p>
                     </div>
                 </li>
 
                 <li>
                     <button onclick="toggleDetails('job4')">Data Processing (Project Assignment)</button>
-                    <div id="job4" style="display:none;">
-                        <p><span class="anonymized" title="Name withheld for privacy">Textile research & project organization (Ghent)</span> — 01/2014 - 12/2014</p>
+                    <div id="job4" class="experience-content" style="display:none;">
+                        <p><span class="anonymized" title="Name withheld for privacy">Textile research & project
+                                organization (Ghent)</span> * <span class="dates">01/2014 - 12/2014</span></p>
                         <p>Processed data for project-specific assignment.</p>
                     </div>
                 </li>
 
                 <li>
                     <button onclick="toggleDetails('job5')">Case Management / PA</button>
-                    <div id="job5" style="display:none;">
-                        <p><span class="anonymized" title="Name withheld for privacy">Private consulting & insurance support firm (Ghent)</span> — 04/2011 - 12/2012</p>
+                    <div id="job5" class="experience-content" style="display:none;">
+                        <p><span class="anonymized" title="Name withheld for privacy">Private consulting & insurance
+                                support firm (Ghent)</span> * <span class="dates">04/2011 - 12/2012</span></p>
                         <p>Provided case management support and assisted insurance experts as personal assistant.</p>
                     </div>
                 </li>
 
                 <li>
                     <button onclick="toggleDetails('job6')">Hotel Administrator / Reception</button>
-                    <div id="job6" style="display:none;">
-                        <p><span class="anonymized" title="Name withheld for privacy">Boutique hotel (Ghent)</span> — 08/2008 - 03/2011</p>
+                    <div id="job6" class="experience-content" style="display:none;">
+                        <p><span class="anonymized" title="Name withheld for privacy">Boutique hotel (Ghent)</span>
+                            * <span class="dates"> 08/2008 - 03/2011</span></p>
                         <p>Daily hotel operations & administration and reception duties.</p>
                     </div>
                 </li>
 
                 <li>
                     <button onclick="toggleDetails('job7')">Payroll Administration / HR</button>
-                    <div id="job7" style="display:none;">
-                        <p><span class="anonymized" title="Name withheld for privacy">Agency for temporary jobs (Ghent)</span> — 1999 - 2006</p>
+                    <div id="job7" class="experience-content" style="display:none;">
+                        <p><span class="anonymized" title="Name withheld for privacy">Agency for temporary jobs
+                                (Ghent)</span> * <span class="dates">1999 - 2006</span></p>
                         <p>Handled payroll administration and human resources across various contracts from student job
                             to full-time employment.</p>
                     </div>
@@ -96,36 +107,30 @@
             </ul>
 
             <h3>Education</h3>
-            <ul>
+            <ul class="education">
                 <li>
-                    Enterprise Java Developer — INTEC Brussels (Brussels), 2025
-                    <button onclick="toggleDetails('cert1')">Show Certificate</button>
-                    <div id="cert1" style="display:none;">
-                        <p><a href="assets/docs/" target="_blank" title="coming soon">Open Certificate PDF</a></p>
-                        <p>Reference: Hilal Demir, Java/Python instructeur, Intec Brussel
-                            Hilal.Demir@intecbrussel.be</p>
-                    </div>
+                    Enterprise Java Developer — INTEC Brussels (2025)
+                    <button class="edubutton" data-message="Certificate coming March 2026">Certificate</button>
+                    <!--<a class="edubutton" href="assets/docs/certificate.pdf" target="_blank">Certificate</a>-->
                 </li>
 
                 <li>
-                    Associate Degree Accounting — PCVO Het Perspectief (Ghent), 2014
-                    <button onclick="toggleDetails('diploma1')">Show Diploma</button>
-                    <div id="diploma1" style="display:none;">
-                        <p><a href="assets/docs/degree accountant.png" target="_blank">Show diploma</a></p>
-                    </div>
+                    Associate Degree Accounting — PCVO Het Perspectief (2014)
+                    <a class="edubutton" href="assets/docs/degree accountant.png" target="_blank">Diploma</a>
                 </li>
 
-                <li><span class="anonymized" title="Name withheld for privacy"></span>University — Political & Social Sciences + Romance Languages, 2 years, 2008</li>
-                <li>Milwaukee WI, USA — Foreign Exchange Student, 2002</li>
-                <li><span class="anonymized" title="Name withheld for privacy">Secondary/High School, Latin-Languages curriculum (Belgium)</span> — 2001</li>
-                <li>Various targeted courses — Administrative & industry-specific software, food safety &
-                    allergens, fire prevention & extinguishing, improvisation, comedy, public speaking</li>
+                <li>University — Political & Social Sciences and Romance Languages (2006-2008)</li>
+                <li>Foreign Exchange Student — Milwaukee WI, USA (2002)</li>
+                <li>Secondary School — Latin-Languages (2001)</li>
+                <li>Targeted courses — various industry-specific software, improvisation & public speaking, safety &
+                    fire prevention, etc.</li>
             </ul>
 
+
             <h3>Skills</h3>
-            <ul>
+            <ul class="skills">
                 <li>Java development (Spring Boot, Spring MVC, Hibernate, JPA, JDBC, Maven)</li>
-                <li>Frontend development: HTML, CSS, JavaScript, TypeScript, Angular, Bootstrap</li>
+                <li>Frontend development: HTML, CSS, JavaScript, Angular, Bootstrap</li>
                 <li>Databases & persistence: MySQL, data modeling</li>
                 <li>Version control & tooling: Git, GitHub, IntelliJ IDEA</li>
                 <li>Testing, methodologies & modeling: JUnit, Agile/Scrum, UML, BPMN</li>
@@ -134,14 +139,56 @@
             </ul>
 
             <h3>Languages</h3>
-            <ul>
-                <li>Dutch (native)</li>
-                <li>English (C2 bilingual)</li>
-                <li>French (B2 very good)</li>
-                <li>Hebrew (B1 good)</li>
-                <li>German (A2 conversation)</li>
-                <li>Spanish (tourist)</li>
-            </ul>
+            <div class="languages">
+                <div class="language">
+                    <span>Dutch</span>
+                    <div class="tube">
+                        <div class="fill dutch"></div>
+                    </div>
+                </div>
+
+                <div class="language">
+                    <span>English</span>
+                    <div class="tube">
+                        <div class="fill english"></div>
+                    </div>
+                </div>
+
+                <div class="language">
+                    <span>French</span>
+                    <div class="tube">
+                        <div class="fill french"></div>
+                    </div>
+                </div>
+
+                <div class="language">
+                    <span>Hebrew</span>
+                    <div class="tube">
+                        <div class="fill hebrew"></div>
+                    </div>
+                </div>
+
+                <div class="language">
+                    <span>German</span>
+                    <div class="tube">
+                        <div class="fill german"></div>
+                    </div>
+                </div>
+
+                <div class="language">
+                    <span>Spanish</span>
+                    <div class="tube">
+                        <div class="fill spanish"></div>
+                    </div>
+                </div>
+
+                <div class="language">
+                    <span>Java</span>
+                    <div class="tube">
+                        <div class="fill java"></div>
+                    </div>
+                </div>
+            </div>
 
         </section>
     </main>

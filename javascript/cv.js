@@ -5,4 +5,12 @@ function toggleDetails(id) {
     el.style.display = (el.style.display === "none") ? "block" : "none";
 }
 
+document.addEventListener("click", function(e) {
+    if (e.target.classList.contains("edubutton") && e.target.tagName === "BUTTON") {
+        const msg = e.target.getAttribute("data-message");
+        alert(msg);
+    }
+});
+
+
 // <script src="javascript/cv.js"></script>

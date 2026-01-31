@@ -32,7 +32,7 @@ function throwDice() {
     dice.forEach(d => {
         let value = Math.floor(Math.random() * 6) + 1;
         values.push(value);
-        d.src = `dobbelstenen/die-${value}.png`;
+        d.src = `images_dobbelstenen/die-${value}.png`;
     });
 
     //calculate score
