@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 // when fully deleted
                 if (char < 0) {
                     deleting = false;
-                    char = 0;               // FIX: prevent negative char
+                    char = 0;               
                     i = (i + 1) % phrases.length;
-                    el.textContent = "";    // FIX: clear before typing next
+                    el.textContent = "";    
                     setTimeout(typeLoop, speed);
                     return;
                 }
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const footerText = document.querySelector("footer p");
     if (footerText) {
         const year = new Date().getFullYear();
-        footerText.textContent = `© ${year} Portfolio Eva Vandenbroucke.`;
+        footerText.textContent = `© ${year} Website Eva Vandenbroucke.`;
     }
     
     // easter egg
