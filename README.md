@@ -1,6 +1,6 @@
 # Portfolio Resume
 
-*A full website about me*
+*A complete website about me, my skills and some mild entertainment*
 
 ---
 
@@ -19,7 +19,8 @@
 - Dedicated projects page linking directly to public GitHub repositories
 - Accessibility-aware design, including keyboard navigation and reduced-motion support
 - Clean separation of structure, style, and behavior (HTML / CSS / JS)
-- Lightweight, dependency-free implementation 
+- Lightweight, dependency-free implementation
+- 3 minutes of your time
 
 ---
 
@@ -50,9 +51,7 @@ portfolio_resume/
 ├── interlude.html      
 │
 ├── css/
-│   ├── main.css       
-│   ├── cv.css          
-│   └── photos.css      g
+│   └── style_portfolio.css       
 │
 ├── javascript/
 │   ├── main.js          
