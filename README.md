@@ -1,4 +1,4 @@
-# Website EvaV
+# Website Eva Vandenbroucke
 
 *A complete website about me, my skills and some mild entertainment*
 
