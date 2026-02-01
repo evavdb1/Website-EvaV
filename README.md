@@ -36,7 +36,7 @@ Tools
     Open the URL in your browser, the portfolio is hosted via GitHub Pages.
 
 ```
-portfolio_resume/
+Website-EvaV/
 │
 ├── index.html          
 ├── about.html          
