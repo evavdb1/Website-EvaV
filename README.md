@@ -55,9 +55,8 @@ portfolio_resume/
 │
 ├── javascript/
 │   ├── main.js          
-│   ├── cv.js   
-│   ├── gallery.js      
-│   └── projects.js     
+│   ├── cv.js        
+│   └── gallery.js     
 │
 ├── assets/
 │   ├── docs/
