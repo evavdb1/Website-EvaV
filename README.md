@@ -1,47 +1,42 @@
-# Portfolio Resume
+# Website EvaV
 
 *A complete website about me, my skills and some mild entertainment*
 
 ---
 
 ## Tech Stack
-- Java 17+
+Frontend
+- HTML5
+- CSS3
+- JavaScript
+
+Tools
 - Visual Studio Code
-- Github
-- Notepad
+- Git & GitHub
 
 ---
 
 ## Features
-- Multi-page portfolio built with semantic HTML, modern CSS, and vanilla JavaScript
-- Responsive layout with a fixed project grid and hover-based project discovery
-- Interactive CV section with expandable experience, education, and certificates
-- Dedicated projects page linking directly to public GitHub repositories
-- Accessibility-aware design, including keyboard navigation and reduced-motion support
-- Clean separation of structure, style, and behavior (HTML / CSS / JS)
-- Lightweight, dependency-free implementation
-- 3 minutes of your time
+- Multi-page portfolio built with HTML, CSS and JavaScript
+- Responsive layout that works on any screen, with an easy to browse project grid
+- Interactive CV section with expandable extra information and documents
+- Dedicated projects page linking directly to 15 well-organized public GitHub repositories
+- Clean separation of structure, style, and behavior
+- No frameworks, no heavy dependencies: fast, lightweight and easy to maintain
+- Designed to explore in just a few minutes and keep you interested
 
 ---
 
 ## How to Run
 
 -   View online
-    --> Open the URL in your browser, the portfolio is hosted via GitHub Pages.
-
-OR
-
--   * Clone the repository
     ```
-    git clone https://github.com/evavdb1/portfolio-resume.git
+    https://evavdb1.github.io/Website-EvaV/
     ```
-    * Open the project folder.
-    * Open `index.html` in a web browser.
-
----
+    Open the URL in your browser, the portfolio is hosted via GitHub Pages.
 
 ```
-portfolio_resume/
+Website-EvaV/
 │
 ├── index.html          
 ├── about.html          

@@ -56,6 +56,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const year = new Date().getFullYear();
         footerText.textContent = `© ${year} Portfolio Eva Vandenbroucke.`;
     }
+    
+    // easter egg
+    const logo = document.querySelector('footer .logo');
+    const overlay = document.getElementById('meme-overlay');
+
+    if (!logo || !overlay) return;
+
+    logo.addEventListener('click', () => {
+        overlay.style.display = 'flex';
+    });
+
+    overlay.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    });
 });
 
 // <script src="javascript/main.js"></script>
