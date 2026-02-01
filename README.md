@@ -1,4 +1,4 @@
-# Portfolio Resume
+# Website Resume
 
 *A complete website about me, my skills and some mild entertainment*
 
@@ -41,7 +41,7 @@ OR
 ---
 
 ```
-portfolio_resume/
+Website-Resume/
 │
 ├── index.html          
 ├── about.html          
