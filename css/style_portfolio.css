@@ -109,7 +109,7 @@ nav a {
 }
 
 nav a.current {  
-    color: #3a7f3a;
+    color: #8fbf8a;
 }
 
 nav a:hover { text-decoration: underline; }
@@ -179,8 +179,8 @@ main ul {
 }
 
 .terminal-box p::after {
-    content: "▌";
-    animation: blink 0.8s steps(1) infinite;
+    content: "█";
+    animation: blink 0.8s steps(1) 3;
 }
 
 @keyframes blink {
@@ -654,5 +654,28 @@ a:focus-visible {
     * {
         transition: none !important;
         animation: none !important;
+    }
+}
+
+/*well functioning of terminal on mobile*/
+@media (max-width: 500px) {
+    .terminal-box {
+        max-width: 90vw;      
+        white-space: normal;  
+        text-align: center;   
+    }
+
+    .terminal-box p {
+        white-space: normal;  
+    }
+}
+
+/*realigning on small screen (experience @ cv) on mobile*/
+@media (max-width: 900px) {
+    .experience li button {
+        margin-left: 0 !important;   
+        display: block;
+        margin: 10px auto;           
+        white-space: nowrap;         
     }
 }
